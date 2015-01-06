@@ -7,3 +7,4 @@ Even if I never write Clojure for work, I think it will greatly expand my abilit
 Perseverance will be an important driving force in this journey, as I will need to do some work every day whether I like it or not. But the promise is simpler code, and the possibility of doing something great.
 
 * [Aaron Bedra - clojure.web/with-security  (video)] (https://www.youtube.com/watch?v=CBL59w7fXw4)
+* [Clojure Web Security] (http://www.lispcast.com/clojure-web-security)
