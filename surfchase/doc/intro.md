@@ -17,4 +17,3 @@ core.async
 
 Later, use korma sql to load the JSON data and use to store and query. For now, use sqlite.
 
-TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)
