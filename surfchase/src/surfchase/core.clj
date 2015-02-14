@@ -7,13 +7,18 @@
   [beaches]
   (apply max-key :score beaches))
 
-(defn -main
-  "Start our simulation ..."
-  [& args]
-  (def beach-list (json/read-str 
+(defn load-beaches
+  "Load data from beaches.json file"
+  []
+  (json/read-str 
        (slurp (.getFile (clojure.java.io/resource "beaches.json")))
        :key-fn keyword
        ))
+
+(defn -main
+  "Start our simulation ..."
+  [& args]
+  (def beach-list (load-beaches))
   (println beach-list)
   (println (choose-beach (get beach-list :beaches))))
 
