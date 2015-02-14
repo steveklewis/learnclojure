@@ -2,7 +2,18 @@
   (:require [clojure.data.json :as json])
   (:gen-class))
 
+(defn choose-beach
+  "Given a list of beaches, choose the best beach"
+  [beaches]
+  (apply max-key :score beaches))
+
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Start our simulation ..."
   [& args]
-  (print (json/read-str (slurp (.getFile (clojure.java.io/resource "beaches.json"))))))
+  (def beach-list (json/read-str 
+       (slurp (.getFile (clojure.java.io/resource "beaches.json")))
+       :key-fn keyword
+       ))
+  (println beach-list)
+  (println (choose-beach (get beach-list :beaches))))
+
