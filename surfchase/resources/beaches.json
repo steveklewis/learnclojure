@@ -1,6 +1,10 @@
 {"beaches": [
-  {"name": "St. Petersburg/Clearwater"},
-  {"name": "Sarasota"},
-  {"name": "Ft. Lauderdale"},
-  {"name": "Cocoa Beach"}
+  {"name": "St. Petersburg/Clearwater",
+   "score": 100},
+  {"name": "Sarasota",
+   "score": 105},
+  {"name": "Ft. Lauderdale",
+   "score": 92},
+  {"name": "Cocoa Beach",
+   "score": 98}
 ]}
