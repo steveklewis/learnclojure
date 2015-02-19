@@ -8,5 +8,6 @@ Next, get Cider working for emacs. Create different scripts to swap out golang c
 
 Next, get a conf dir with both emacs and lein configs. Use softlinks to link to these git dirs.
 
+Next, use korma sql to load the JSON data and use to store and query. For now, use sqlite.
 
 TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)
