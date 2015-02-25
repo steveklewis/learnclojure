@@ -1,7 +1,8 @@
 (ns logging.core
-  (:require [clojure.tools.logging :as log]))
+  (:require [clojure.tools.logging :as log]
+            [environ.core :as environ]))
 
 (defn -main [& args]
-  (let [env (get (System/getenv) "CLJ_ENV" "development")]
-    (log/info (format "Starting the app with %s environment" env)
+  (let [env (environ/env :clj-env)]
+    (log/info (format "Starting the app with %s environment" (name env))
     (println "Hello, World!"))))

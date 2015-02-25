@@ -8,6 +8,14 @@
                  [log4j/log4j "1.2.17" :exclusions [javax.mail/mail
                                                     javax.jms/jms
                                                     com.sun.jdmk/jmxtools
-                                                    com.sun.jmx/jmxri]]]
+                                                    com.sun.jmx/jmxri]]
+                 [environ "1.0.0"]]
+  :plugins [[lein-environ "1.0.0"]]
+  :profiles {:dev        {:jvm-opts ["-Dlogfile.path=development"]
+                          :env {:clj-env :development}}
+             :test       {:jvm-opts ["-Dlogfile.path=test"]
+                          :env {:clj-env :test}}
+             :production {:jvm-opts ["-Dlogfile.path=production"]
+                          :env {:clj-env :production}}}
   :main logging.core
 )
