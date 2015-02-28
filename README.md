@@ -8,6 +8,7 @@ Perseverance will be an important driving force in this journey, as I will need 
 
 * [Aaron Bedra - clojure.web/with-security  (video)] (https://www.youtube.com/watch?v=CBL59w7fXw4)
 * [Clojure Web Security] (http://www.lispcast.com/clojure-web-security)
+* [Timothy Baldridge - Core.Async] (https://www.youtube.com/watch?v=enwIIGzhahw)
 
 Emacs
 
