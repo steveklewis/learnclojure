@@ -18,15 +18,23 @@
        (slurp (.getFile (clojure.java.io/resource beaches-resource)))
        :key-fn keyword))
 
+(defn update-beach
+  [update-beach-map event]
+  (assoc update-beach-map (event :name) event))
 
 (defn -main
   "Start our simulation ..."
   [& args]
   (def beach-list (load-beaches "beaches.json"))
+  (def beach-names (map :name (get beach-list :beaches)))
   (def beach-events (load-beaches "events.json"))
-  (println beach-list)
-  (println (choose-beach (get beach-list :beaches)))
+  (def beach-map (atom (zipmap beach-names (get beach-list :beaches))))
+  (def first-beach (choose-beach (get beach-list :beaches)))
+  (println "First beach is" first-beach)
+
   (def event-chan (chan))
-  (go (while true (println "Incoming surf notice:" (<! event-chan))))
+  (go (while true 
+        (let [event (<! event-chan)]
+          (swap! beach-map assoc (event :name) event))))
   (doseq [event (beach-events :events)] 
-    (>!! event-chan event)))
+        (>!! event-chan event)))

@@ -10,7 +10,9 @@ Next, get a conf dir with both emacs and lein configs. Use softlinks to link to 
 
 Next, research core.async to get events going as soon as possible. This is the meat of the program and why it might be interesting to me at all.
 
-Next, figure out the best way to represent the current state and the list of beaches. Figure out best way to change the current state and list of beaches.
+Next, figure out the best way to represent the current state and the list of beaches. Figure out best way to change the current state and list of beaches. I'll need to use a map to be able to look up and replace an individual beach info. Currently in the json it comes in as a list. Convert that to a map after slurping.
+
+Next, after an event, recalculate and choose the next beach to go to.
 
 [Clojure core.async Channels - introductory blog post by Rich Hickey](http://clojure.com/blog/2013/06/28/clojure-core-async-channels.html)
 
