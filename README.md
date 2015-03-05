@@ -9,11 +9,13 @@ Perseverance will be an important driving force in this journey, as I will need 
 * [Aaron Bedra - clojure.web/with-security  (video)] (https://www.youtube.com/watch?v=CBL59w7fXw4)
 * [Clojure Web Security] (http://www.lispcast.com/clojure-web-security)
 * [Timothy Baldridge - Core.Async] (https://www.youtube.com/watch?v=enwIIGzhahw)
+* [Clojure Concurrency - Rich Hickey] (https://www.youtube.com/watch?feature=player_detailpage&v=dGVqrGmwOAw#t=3725)
 
 Emacs
 
 * [Brave Clojure - Basic Emacs] (http://www.braveclojure.com/basic-emacs/)
 * [Brave Clojure - Using Emacs with Clojure] (http://www.braveclojure.com/using-emacs-with-clojure/)
+* [Projectile] (https://github.com/bbatsov/projectile)
 
 Soft Skills
 

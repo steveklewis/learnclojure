@@ -14,6 +14,9 @@ Next, figure out the best way to represent the current state and the list of bea
 
 Next, after an event, recalculate and choose the next beach to go to.
 
+Next, figure out what happens when we have multiple surfers. Everyone can't be at the same beach, so figure out a capacity.
+
+
 [Clojure core.async Channels - introductory blog post by Rich Hickey](http://clojure.com/blog/2013/06/28/clojure-core-async-channels.html)
 
 
