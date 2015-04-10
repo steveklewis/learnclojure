@@ -28,5 +28,23 @@
   (println (choose-beach (get beach-list :beaches)))
   (def event-chan (chan))
   (go (while true (println "Incoming surf notice:" (<! event-chan))))
+  (def choose-beach-chan (chan))
+
+
+  ;; Redo choose-beach with beach-map instead of beach-list
+  ;;(go (while true
+  ;;      (let [in-beach-map (<! choose-beach-chan)]
+  ;;        ()
+  ;;        )
+  ;;      
+  ;;      )
+  ;;    
+  ;;    )
+
+  (go (while true 
+        (let [event (<! event-chan)]
+          ((swap! beach-map assoc (event :name) event)
+           ;(>! beach-map-chan beach-map)
+           (println "Received event:" event)))))
   (doseq [event (beach-events :events)] 
     (>!! event-chan event)))

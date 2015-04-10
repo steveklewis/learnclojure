@@ -14,6 +14,8 @@ Emacs
 
 * [Brave Clojure - Basic Emacs] (http://www.braveclojure.com/basic-emacs/)
 * [Brave Clojure - Using Emacs with Clojure] (http://www.braveclojure.com/using-emacs-with-clojure/)
+* [Projectile] (https://github.com/bbatsov/projectile)
+* [LineNumbers] (http://www.emacswiki.org/emacs/LineNumbers)
 
 Soft Skills
 
