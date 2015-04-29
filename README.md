@@ -14,6 +14,9 @@ Emacs
 
 * [Brave Clojure - Basic Emacs] (http://www.braveclojure.com/basic-emacs/)
 * [Brave Clojure - Using Emacs with Clojure] (http://www.braveclojure.com/using-emacs-with-clojure/)
+* [Projectile] (https://github.com/bbatsov/projectile)
+* [LineNumbers] (http://www.emacswiki.org/emacs/LineNumbers)
+* [.Emacs #4 - Exploring the Filesystem with Dired (video)] (https://www.youtube.com/watch?v=7jZdul2fC94)
 
 Soft Skills
 
