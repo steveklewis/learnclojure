@@ -18,6 +18,7 @@ Emacs
 * [LineNumbers] (http://www.emacswiki.org/emacs/LineNumbers)
 * [.Emacs #4 - Exploring the Filesystem with Dired (video)] (https://www.youtube.com/watch?v=7jZdul2fC94)
 * [Emacs - No Tabs] (http://www.emacswiki.org/emacs/NoTabs)
+* [Emacs - Find-Tag] (http://www.gnu.org/software/emacs/manual/html_node/emacs/Find-Tag.html)
 
 Soft Skills
 
