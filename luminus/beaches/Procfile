@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/beaches.jar clojure.main -m beaches.core
