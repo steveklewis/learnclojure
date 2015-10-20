@@ -6,8 +6,14 @@
 (defui HelloWorld
   Object
   (render [this]
-          (dom/div nil "Hello, world2!")))
+          (dom/div nil (get (om/props this) :title))))
 
 (def hello (om/factory HelloWorld))
 
-(js/React.render (hello) (gdom/getElement "app"))
+(js/React.render
+ ;; CHANGED
+ (apply dom/div nil
+        (map #(hello {:title (str "Hello " %)})
+             (range 3)))
+ (gdom/getElement "app"))
+ 
